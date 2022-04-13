@@ -1,7 +1,28 @@
 /* Our CSS file. */
 
 
-.container, .content {
+.container{
 width: 100%;
-height: 100%;
+height: auto;
+border: 1px solid grey;
+background-color: rgb(220,215,215);
+}
+/* 2row will cover the full screen  */
+.row{
+    display: block;
+    width: 100%;
+    /* height will cover top to bottom */
+    height: 300px;
+    margin: 10px;
+
+}
+/* col will divide one two and three four side by side */
+.col{
+    /* inline block put columns side by side */
+    /* display: inline-block; */
+    /* 45% width will move them side ..and rest 5% for margin */
+    width: 45%;
+    height: inherit; /* inherit from his parent row */
+    margin: 10px;
+    float:left;
 }
