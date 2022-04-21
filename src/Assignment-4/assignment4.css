@@ -1,7 +1,150 @@
 /* Our CSS file. */
+/* Reset file start */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    color:inherit;
+    text-decoration:none;
+}
+/* Reset file end */
 
-
-.container, .content {
+#container, .content {
 width: 100%;
 height: 100%;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: aqua;
+    color: white;
+    height: 50px;
+    padding: 0 25px;
+}
+header nav{
+float:right;
+}
+header h1{
+    float: left;
+    text-indent: -9999px;
+    background:url(./Img/logo.png) no-repeat;
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+    margin-top: 8px;
+}
+nav li{
+    display: inline-block;
+    padding: 15px 10px;
+}
+nav a{
+    color: white;
+}
+nav li:hover{
+    background-color:rgb(219, 94, 94);
+}
+#hero{
+    background: url(./Img/bgimg.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0px;
+    margin-bottom: 50px;
+}
+#hero img{
+    border: 5px solid skyblue;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+}
+#hero h2{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.btn{
+    background-color: rgba(255, 255, 255, 0.158);
+    border: 3px solid skyblue;
+    color: brown;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.btn:hover{
+    padding:5px 10px;
+    background-color:blue;
+    color: white;
+}
+.three-column{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 0px 10px;
+}
+.three-column img{
+    border-radius: 50%;
+    border: 3px solid skyblue;
+    height: 200px;
+    width: 250px;
+    margin: 25px 0px;
+}
+.three-column .btn{
+    display: inline-block;
+}
+footer{
+    background-color:skyblue;
+    color: white;
+    margin-top: 40px;
+    padding: 20px 0px;
+    text-align: center;
+}
+footer ul{
+    margin: 40px 0px;
+}
+footer li{
+    display: inline-block;
+    margin: 0px 25px;
+}
+footer img{
+    height: 40px;
 }
