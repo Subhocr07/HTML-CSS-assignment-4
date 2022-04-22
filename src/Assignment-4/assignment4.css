@@ -148,3 +148,9 @@ footer li{
 footer img{
     height: 40px;
 }
+/* media queries for print specific style */
+@media print {
+    header, footer{
+        display: none;
+    }
+}
